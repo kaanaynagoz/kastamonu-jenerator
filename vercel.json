@@ -1,5 +1,12 @@
 {
-  "rewrites": [
-    { "source": "/(.*)", "destination": "/index.html" }
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "missing": [
+        { "type": "host", "value": "(www\\.)?kastamonuelektrik\\.com" }
+      ],
+      "destination": "https://kastamonuelektrik.com/",
+      "permanent": false
+    }
   ]
 }

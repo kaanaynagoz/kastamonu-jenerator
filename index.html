@@ -4,39 +4,37 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="noindex">
-  <title>Bakımdayız | Kastamonu Jeneratör</title>
-  <meta name="description" content="Kastamonu Jeneratör web sitesi kısa bir bakım çalışmasındadır. Çok yakında yeniden yayındayız.">
-  <link rel="icon" href="logo.png">
+  <title>Bakımdayız | Kastamonu Elektrik</title>
+  <meta name="description" content="Kastamonu Elektrik web sitesi kısa bir bakım çalışmasındadır. Çok yakında yeniden yayındayız.">
+  <link rel="icon" href="logo.webp">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <style>
     :root {
-      --bg: #0b1016;
-      --bg-2: #121a24;
+      --bg: #0b1b33;
+      --bg-2: #123154;
       --card: rgba(255, 255, 255, 0.04);
       --border: rgba(255, 255, 255, 0.09);
       --text: #eef2f6;
-      --muted: #9aa7b6;
-      --accent: #f5b400;
-      --accent-2: #ff7a00;
+      --muted: #a9b8cc;
+      --accent: #65b632;
+      --accent-2: #1da1f2;
     }
 
     * { box-sizing: border-box; margin: 0; padding: 0; }
 
-    html, body { height: 100%; }
+    html { min-height: 100%; background: var(--bg); }
 
     body {
       font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
       color: var(--text);
       background:
-        radial-gradient(1000px 600px at 15% -10%, rgba(245, 180, 0, 0.14), transparent 60%),
-        radial-gradient(900px 600px at 110% 110%, rgba(255, 122, 0, 0.12), transparent 60%),
+        radial-gradient(1000px 600px at 15% -10%, rgba(101, 182, 50, 0.16), transparent 60%),
+        radial-gradient(900px 600px at 110% 110%, rgba(29, 161, 242, 0.16), transparent 60%),
         linear-gradient(180deg, var(--bg-2), var(--bg));
       min-height: 100vh;
       display: flex;
-      align-items: center;
-      justify-content: center;
       padding: 32px 16px;
       overflow-x: hidden;
       -webkit-font-smoothing: antialiased;
@@ -59,6 +57,7 @@
       position: relative;
       width: 100%;
       max-width: 640px;
+      margin: auto;
       text-align: center;
       animation: rise 0.8s ease-out both;
     }
@@ -76,7 +75,7 @@
       margin-bottom: 36px;
     }
     .logo img {
-      max-width: 260px;
+      max-width: 280px;
       max-height: 120px;
       width: auto;
       height: auto;
@@ -104,7 +103,7 @@
       position: absolute;
       inset: 0;
       border-radius: 50%;
-      border: 3px solid rgba(245, 180, 0, 0.15);
+      border: 3px solid rgba(101, 182, 50, 0.15);
       border-top-color: var(--accent);
       border-right-color: var(--accent-2);
       animation: spin 2.4s linear infinite;
@@ -113,7 +112,7 @@
       inset: 14px;
       border-width: 2px;
       border-color: rgba(255, 255, 255, 0.06);
-      border-bottom-color: rgba(245, 180, 0, 0.6);
+      border-bottom-color: rgba(29, 161, 242, 0.7);
       animation-duration: 3.6s;
       animation-direction: reverse;
     }
@@ -124,7 +123,7 @@
       width: 42px;
       height: 42px;
       color: var(--accent);
-      filter: drop-shadow(0 0 12px rgba(245, 180, 0, 0.55));
+      filter: drop-shadow(0 0 12px rgba(101, 182, 50, 0.55));
       animation: pulse 1.8s ease-in-out infinite;
     }
     @keyframes spin { to { transform: rotate(360deg); } }
@@ -140,8 +139,8 @@
       letter-spacing: 0.16em;
       text-transform: uppercase;
       color: var(--accent);
-      background: rgba(245, 180, 0, 0.1);
-      border: 1px solid rgba(245, 180, 0, 0.25);
+      background: rgba(101, 182, 50, 0.12);
+      border: 1px solid rgba(101, 182, 50, 0.3);
       padding: 6px 12px;
       border-radius: 999px;
       margin-bottom: 18px;
@@ -228,7 +227,7 @@
     }
     .btn svg { width: 18px; height: 18px; flex: none; }
     .btn.primary {
-      color: #1a1200;
+      color: #fff;
       background: linear-gradient(90deg, var(--accent), var(--accent-2));
     }
     .btn.ghost {
@@ -237,12 +236,13 @@
       background: rgba(255, 255, 255, 0.03);
     }
     .btn:hover { transform: translateY(-2px); }
-    .btn.ghost:hover { border-color: rgba(245, 180, 0, 0.5); }
+    .btn.ghost:hover { border-color: rgba(29, 161, 242, 0.6); }
 
+    footer a { color: inherit; }
     footer {
       margin-top: 36px;
       font-size: 13px;
-      color: #6b7787;
+      color: #7f93ad;
     }
 
     @media (max-width: 480px) {
@@ -258,8 +258,8 @@
 <body>
   <main class="wrap">
     <div class="logo" id="logo">
-      <img src="logo.png" alt="Kastamonu Jeneratör" onerror="this.parentNode.classList.add('fallback')">
-      <div class="logo-text">KASTAMONU <span>JENERATÖR</span></div>
+      <img src="logo.webp" width="367" height="132" alt="Kastamonu Elektrik" onerror="this.parentNode.classList.add('fallback')">
+      <div class="logo-text">KASTAMONU <span>ELEKTRİK</span></div>
     </div>
 
     <div class="badge" aria-hidden="true">
@@ -279,22 +279,20 @@
 
     <section class="card">
       <h2>Acil bir ihtiyacınız mı var?</h2>
-      <p>Jeneratör satış, kiralama, bakım ve servis talepleriniz için bize ulaşın.</p>
+      <p>Teksan jeneratör satış, bakım, servis ve elektrik taahhüt talepleriniz için bize ulaşın.</p>
       <div class="actions">
-        <!-- TODO: Telefon numarasını güncelleyin -->
-        <a class="btn primary" href="tel:+900000000000">
+        <a class="btn primary" href="tel:+905433205037">
           <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1L6.6 10.8Z"/></svg>
-          Hemen Arayın
+          0543 320 50 37
         </a>
-        <!-- TODO: WhatsApp numarasını güncelleyin -->
-        <a class="btn ghost" href="https://wa.me/900000000000" target="_blank" rel="noopener">
+        <a class="btn ghost" href="https://wa.me/905433205037" target="_blank" rel="noopener">
           <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-3.3-.8-2.7-1.1-4.5-3.9-4.6-4.1-.1-.2-1.1-1.5-1.1-2.8s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.3.5-.4.4c-.1.1-.3.3-.1.6.2.3.7 1.2 1.6 2 1.1 1 2 1.3 2.3 1.4.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.1 1.2Z"/></svg>
           WhatsApp
         </a>
       </div>
     </section>
 
-    <footer>&copy; <span id="y">2026</span> Kastamonu Jeneratör. Tüm hakları saklıdır.</footer>
+    <footer>&copy; <span id="y">2026</span> Kastamonu Elektrik. Tüm hakları saklıdır.<br>Sabit hat: <a href="tel:+903662150777">0366 215 07 77</a></footer>
   </main>
 
   <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
